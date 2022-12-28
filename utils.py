@@ -54,11 +54,12 @@ def insert_data_offers(input_data):
 
 
 def data_db():
-    with open("data/users.json") as file:
+    with open("data/users.json", encoding='utf-8') as file:
         insert_data_users(json.load(file))
 
-    with open("data/orders.json") as file:
+    with open("data/orders.json", encoding='utf-8') as file:
         insert_data_orders(json.load(file))
 
-    with open("data/offers.json") as file:
+    with open("data/offers.json", encoding='utf-8') as file:
         insert_data_offers(json.load(file))
+
